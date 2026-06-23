@@ -495,12 +495,16 @@ img { max-width: 100%; display: block; }
   inset: 4px;
   border-radius: 50%;
   background: var(--dark-card);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
-  color: var(--pink);
+  overflow: hidden;
   border: 3px solid var(--dark);
+}
+
+.avatar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
 }
 
 .about-badges {
