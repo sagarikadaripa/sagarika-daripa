@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sagarika Daripa — Senior Ruby on Rails Developer & Software Engineer. 5+ years building scalable SaaS products." />
+  <meta name="keywords" content="Sagarika Daripa, Software Engineer, Ruby on Rails Developer, Full Stack, Portfolio" />
+  <meta property="og:title" content="Sagarika Daripa — Software Engineer" />
+  <meta property="og:description" content="Senior Ruby on Rails Developer with 5+ years of experience building scalable SaaS products." />
+  <title>Sagarika Daripa — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Scroll Progress Bar ── -->
+  <div id="scroll-progress"></div>
+
+  <!-- ── Navigation ── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">SD<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Floating Social Icons ── -->
+  <div class="floating-social">
+    <a href="https://linkedin.com/in/sagarikadaripa" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/sagarikadaripa" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://leetcode.com/sagarikadaripa/" target="_blank" title="LeetCode"><i class="fas fa-code"></i></a>
+    <a href="mailto:sagarikadaraipa19@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, World! 👋</p>
+      <h1 class="hero-name">Sagarika Daripa</h1>
+      <div class="hero-title">
+        <span class="typing-text" id="typing-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-tagline">Building scalable products, solving complex problems,<br>and continuously learning.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+        <a href="Sagarika_Daripa_Resume_Updated.html" target="_blank" class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Contact Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Years Experience</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Companies</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">SaaS</span><span class="stat-label">Products Built</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ABOUT
+  ══════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar-placeholder">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+          <div class="about-badges">
+            <div class="badge-chip"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</div>
+            <div class="badge-chip"><i class="fas fa-briefcase"></i> Open to Opportunities</div>
+            <div class="badge-chip"><i class="fas fa-graduation-cap"></i> B.Tech CSE · CGPA 9.1</div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>Senior Ruby on Rails Developer</strong> with <strong>5+ years of experience</strong> building and maintaining production-grade <strong>SaaS products</strong> in Agile environments.
+          </p>
+          <p>
+            My journey spans <strong>fintech</strong> at ACNJ Technologies (Finvisage), <strong>EdTech</strong> at Edubrite Systems (acquired by LinkedIn), and currently <strong>risk management SaaS</strong> at Riskonnect — each shaping me into an engineer who cares deeply about performance, clean architecture, and real user impact.
+          </p>
+          <p>
+            I specialize in <strong>REST API design</strong>, <strong>database optimization</strong>, <strong>N+1 elimination</strong>, and building systems that scale. I'm currently diving deep into <strong>Machine Learning</strong> and AI to expand my technical horizon.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item"><i class="fas fa-check-circle"></i> 90% reduction in PDF pipeline latency</div>
+            <div class="highlight-item"><i class="fas fa-check-circle"></i> 60–70% faster document load times</div>
+            <div class="highlight-item"><i class="fas fa-check-circle"></i> 30% faster APIs via Redis caching</div>
+            <div class="highlight-item"><i class="fas fa-check-circle"></i> Mentored junior developers & interns</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SKILLS
+  ══════════════════════════════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">Tech <span class="highlight">Stack</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-terminal"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Ruby</span>
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">Ruby on Rails</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Django</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Sidekiq</span>
+            <span class="tag">Action Cable</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag">Hotwire</span>
+            <span class="tag">Turbo Streams</span>
+            <span class="tag">Stimulus JS</span>
+            <span class="tag">React</span>
+            <span class="tag">jQuery</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Elasticsearch</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-cloud"></i></div>
+          <h3>Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Git</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-flask"></i></div>
+          <h3>Testing & Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">RSpec</span>
+            <span class="tag">TDD</span>
+            <span class="tag">JIRA</span>
+            <span class="tag">GitHub Copilot</span>
+            <span class="tag">Cursor</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       EXPERIENCE
+  ══════════════════════════════ -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My journey</span>
+        <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Riskonnect -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Riskonnect</h3>
+                <p class="timeline-role">Software Engineer — Business Continuity & Resilience</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Oct 2024 – Present</span>
+                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</span>
+                <span class="timeline-badge current">Current</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Engineered a real-time approval PDF pipeline using <strong>Action Cable</strong> & <strong>Turbo Streams</strong>, reducing PDF availability latency by <strong class="highlight-num">90%</strong> (30s → &lt;3s).</li>
+              <li>Redesigned document architecture using <strong>N-ary tree</strong> + <strong>DFS traversal</strong>, cutting initial load time by <strong class="highlight-num">60–70%</strong>.</li>
+              <li>Eliminated major <strong>N+1 query</strong> defects and fixed UI-level issues with Stimulus JS.</li>
+              <li>Reduced recurring production issues — decreased new defect reports by <strong class="highlight-num">10/week</strong>.</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>Ruby on Rails</span><span>Stimulus JS</span><span>Hotwire</span><span>Turbo Streams</span><span>PostgreSQL</span><span>Redis</span><span>Elasticsearch</span><span>React</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACNJ / Finvisage -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">ACNJ Technologies <span class="company-sub">(Finvisage)</span></h3>
+                <p class="timeline-role">Software Developer — Asset Liability Management</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Sept 2022 – Sept 2024</span>
+                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Reduced manual effort by <strong class="highlight-num">40–50%</strong> via a Python microservice for real-time Mutual Fund market tracking with automated cron jobs.</li>
+              <li>Implemented <strong>Redis caching</strong> strategy for REST APIs, cutting page load times by <strong class="highlight-num">30%</strong>.</li>
+              <li>Engineered personalised financial dashboards, resulting in <strong class="highlight-num">23%</strong> increase in efficiency and data accessibility.</li>
+              <li>Mentored 2 interns and junior developers in Agile best practices.</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>Ruby on Rails</span><span>Python</span><span>JavaScript</span><span>PostgreSQL</span><span>Redis</span><span>AWS</span><span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edubrite -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Edubrite Systems <span class="company-sub">(Acquired by LinkedIn)</span></h3>
+                <p class="timeline-role">Full Stack Developer — Learning Management System</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> June 2021 – Sept 2022</span>
+                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Revamped video player with chapter & timestamp features, improving navigation efficiency by <strong class="highlight-num">20%</strong>.</li>
+              <li>Built interactive web pages boosting user engagement by <strong class="highlight-num">30%</strong> and cross-device usability.</li>
+              <li>Implemented caching, lazy loading & code splitting — reduced page load times by <strong class="highlight-num">30%</strong>.</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>Java</span><span>Spring Boot</span><span>Velocity</span><span>JavaScript</span><span>jQuery</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PROJECTS
+  ══════════════════════════════ -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-image">
+            <div class="project-img-placeholder">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/sagarikadaripa" target="_blank" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Personal Finance Tracker</h3>
+            <p>A full-stack web application to track income, expenses, and savings goals with visual dashboards and monthly reports.</p>
+            <div class="project-stack">
+              <span>Ruby on Rails</span><span>PostgreSQL</span><span>Chart.js</span><span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">
+            <div class="project-img-placeholder">
+              <i class="fas fa-link"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/sagarikadaripa" target="_blank" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>URL Shortener</h3>
+            <p>A high-performance URL shortener with custom aliases, click analytics, and Redis-backed caching for sub-millisecond redirects.</p>
+            <div class="project-stack">
+              <span>Ruby on Rails</span><span>Redis</span><span>PostgreSQL</span><span>REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">
+            <div class="project-img-placeholder">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/sagarikadaripa" target="_blank" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>EMI Calculator</h3>
+            <p>An interactive EMI calculator with amortization schedules, prepayment impact analysis, and exportable payment breakdowns.</p>
+            <div class="project-stack">
+              <span>Ruby on Rails</span><span>JavaScript</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image">
+            <div class="project-img-placeholder">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/sagarikadaripa" target="_blank" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Repayment Schedule System</h3>
+            <p>A fintech tool for generating dynamic loan repayment schedules with support for variable rates, grace periods, and bulk exports.</p>
+            <div class="project-stack">
+              <span>Ruby on Rails</span><span>Python</span><span>PostgreSQL</span><span>Redis</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ACHIEVEMENTS
+  ══════════════════════════════ -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Recognition & growth</span>
+        <h2 class="section-title">Achievements <span class="highlight">&amp; Learning</span></h2>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+          <h3>GitHub Pull Shark</h3>
+          <p>Earned the Pull Shark achievement for consistent, quality contributions through well-crafted pull requests.</p>
+          <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" alt="Pull Shark" class="achievement-badge-img" />
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-bolt"></i></div>
+          <h3>GitHub Quickdraw</h3>
+          <p>Earned the Quickdraw achievement for fast, decisive issue resolution — close an issue within 5 minutes.</p>
+          <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" alt="Quickdraw" class="achievement-badge-img" />
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-brain"></i></div>
+          <h3>Problem Solving</h3>
+          <p>Actively solving algorithmic challenges on LeetCode — strengthening DSA, system design, and coding fundamentals.</p>
+          <a href="https://leetcode.com/sagarikadaripa/" target="_blank" class="achievement-link">View LeetCode Profile <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Academic Excellence</h3>
+          <p>Graduated with a CGPA of <strong>9.1 / 10</strong> in B.Tech Computer Science from NIST, Berhampur.</p>
+          <a href="https://www.geeksforgeeks.org/user/sagarikadaripa/" target="_blank" class="achievement-link">GeeksForGeeks Profile <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-robot"></i></div>
+          <h3>Continuous Learning</h3>
+          <p>Currently exploring Machine Learning, AI/LLMs, and Data Science to stay ahead of the engineering curve.</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-users"></i></div>
+          <h3>Mentorship</h3>
+          <p>Mentored interns and junior developers in Agile workflows, TDD, and clean code best practices.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       EDUCATION
+  ══════════════════════════════ -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic background</span>
+        <h2 class="section-title">Edu<span class="highlight">cation</span></h2>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fas fa-university"></i></div>
+        <div class="edu-content">
+          <h3>National Institute of Science and Technology</h3>
+          <p class="edu-sub">Berhampur, Odisha, India</p>
+          <p class="edu-degree">Bachelor of Technology — Computer Science Engineering</p>
+          <div class="edu-meta">
+            <span class="edu-cgpa"><i class="fas fa-star"></i> CGPA: 9.1 / 10</span>
+            <span class="edu-years"><i class="far fa-calendar-alt"></i> June 2017 – June 2021</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACT
+  ══════════════════════════════ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's connect</span>
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <p class="section-subtitle">I'm always open to new opportunities, collaborations, or just a good tech conversation. Reach out!</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:sagarikadaraipa19@gmail.com" class="contact-card reveal">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email</h3>
+          <p>sagarikadaraipa19@gmail.com</p>
+        </a>
+        <a href="https://linkedin.com/in/sagarikadaripa" target="_blank" class="contact-card reveal">
+          <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+          <h3>LinkedIn</h3>
+          <p>linkedin.com/in/sagarikadaripa</p>
+        </a>
+        <a href="https://github.com/sagarikadaripa" target="_blank" class="contact-card reveal">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <h3>GitHub</h3>
+          <p>github.com/sagarikadaripa</p>
+        </a>
+        <a href="https://leetcode.com/sagarikadaripa/" target="_blank" class="contact-card reveal">
+          <div class="contact-icon"><i class="fas fa-code"></i></div>
+          <h3>LeetCode</h3>
+          <p>leetcode.com/sagarikadaripa</p>
+        </a>
+        <a href="https://www.geeksforgeeks.org/user/sagarikadaripa/" target="_blank" class="contact-card reveal">
+          <div class="contact-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>GeeksForGeeks</h3>
+          <p>geeksforgeeks.org/sagarikadaripa</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <p>Designed & Built by <span class="highlight">Sagarika Daripa</span></p>
+      <p class="footer-sub">© 2025 · Made with <i class="fas fa-heart" style="color: var(--pink)"></i> and Ruby on Rails</p>
+    </div>
+  </footer>
+
+  <!-- ── Back to Top ── -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sagarika Daripa — Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm 14mm 16mm;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 9.6pt;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.38;
+    }
+
+    /* ── Keyword highlight ── */
+    .kw {
+      background: #fff3b0;
+      padding: 0 2px;
+      border-radius: 2px;
+      font-weight: 600;
+    }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 7px;
+    }
+
+    .header h1 {
+      font-size: 19pt;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .contact-line {
+      font-size: 8.8pt;
+      color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2px 8px;
+    }
+
+    .contact-line a {
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    .sep { color: #aaa; }
+
+    /* ── Section ── */
+    .section { margin-top: 8px; }
+
+    .section-title {
+      font-size: 9.6pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      border-bottom: 1.4px solid #1a1a1a;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+    }
+
+    /* ── Summary ── */
+    .summary-text { font-size: 9.3pt; line-height: 1.45; }
+
+    /* ── Skills ── */
+    .skills-cols {
+      display: flex;
+      gap: 14px;
+    }
+
+    .skills-col {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 2px 6px;
+      font-size: 9.2pt;
+      align-content: start;
+    }
+
+    .skill-label { font-weight: 700; }
+
+    /* ── Experience ── */
+    .job { margin-bottom: 7px; }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .company { font-weight: 700; font-size: 9.8pt; }
+    .location { font-size: 8.8pt; color: #444; }
+
+    .job-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 1px;
+    }
+
+    .job-title { font-style: italic; font-size: 9.3pt; }
+    .job-dates { font-size: 8.8pt; color: #444; white-space: nowrap; }
+
+    .bullets { margin-top: 3px; padding-left: 14px; }
+
+    .bullets li {
+      font-size: 9.2pt;
+      margin-bottom: 2px;
+      line-height: 1.38;
+    }
+
+    .tech-stack {
+      font-size: 8.6pt;
+      color: #444;
+      margin-top: 2px;
+      padding-left: 14px;
+    }
+
+    /* ── Education ── */
+    .edu-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-school { font-weight: 700; font-size: 9.6pt; }
+    .edu-degree { font-size: 9.2pt; font-style: italic; }
+
+    .edu-right {
+      text-align: right;
+      font-size: 8.8pt;
+      color: #444;
+      white-space: nowrap;
+      padding-left: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <div class="header">
+    <h1>Sagarika Daripa</h1>
+    <div class="contact-line">
+      <a href="mailto:sagarikadaripa19@gmail.com">sagarikadaripa19@gmail.com</a>
+      <span class="sep">|</span>
+      <span>+91-7091362239</span>
+      <span class="sep">|</span>
+      <a href="https://linkedin.com/in/sagarikadaripa">linkedin.com/in/sagarikadaripa</a>
+      <span class="sep">|</span>
+      <a href="https://github.com/sagarikadaripa">github.com/sagarikadaripa</a>
+      <span class="sep">|</span>
+      <a href="https://leetcode.com/sagarikadaripa">leetcode.com/sagarikadaripa</a>
+      <span class="sep">|</span>
+      <a href="https://geeksforgeeks.org/user/sagarikadaripa">geeksforgeeks.org/sagarikadaripa</a>
+    </div>
+  </div>
+
+  <!-- ═══ SUMMARY ═══ -->
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <p class="summary-text">
+      Senior <span class="kw">Ruby on Rails</span> Developer with 5 years of experience in <span class="kw">Agile</span> environments
+      building and maintaining <span class="kw">SaaS</span> products using <span class="kw">Ruby on Rails</span>, <span class="kw">Python</span>,
+      and <span class="kw">JavaScript</span>. Skilled in <span class="kw">REST API</span> design, feature development,
+      database optimization, system performance improvement, and defect resolution. Strong focus on clean code,
+      design patterns, <span class="kw">TDD</span>, and system design.
+    </p>
+  </div>
+
+  <!-- ═══ SKILLS ═══ -->
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <div class="skills-cols">
+      <!-- Left column -->
+      <div class="skills-col">
+        <span class="skill-label">Languages</span>
+        <span>Ruby, Java, Python</span>
+
+        <span class="skill-label">Frameworks</span>
+        <span>Ruby on Rails, Django, Spring Boot</span>
+
+        <span class="skill-label">Frontend</span>
+        <span>JavaScript, React, Stimulus JS, Hotwire, Turbo Streams, jQuery, Bootstrap</span>
+
+        <span class="skill-label">Tools</span>
+        <span>Git, JIRA, Cursor, GitHub Copilot, ChatGPT, Claude</span>
+      </div>
+      <!-- Right column -->
+      <div class="skills-col">
+        <span class="skill-label">Database</span>
+        <span>PostgreSQL, MySQL, Redis, Elasticsearch</span>
+
+        <span class="skill-label">Cloud &amp; DevOps</span>
+        <span>AWS, CI/CD</span>
+
+        <span class="skill-label">Testing</span>
+        <span>RSpec</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <!-- Riskonnect -->
+    <div class="job">
+      <div class="job-header">
+        <span class="company">Riskonnect</span>
+        <span class="location">Bengaluru, India</span>
+      </div>
+      <div class="job-title-row">
+        <span class="job-title">Software Engineer — Business Continuity and Resilience</span>
+        <span class="job-dates">Oct 2024 – Present</span>
+      </div>
+      <ul class="bullets">
+        <li>Engineered a real-time approval PDF pipeline using <span class="kw">Action Cable</span> and <span class="kw">Turbo Streams</span>, streaming live status updates to users, eliminating manual page refreshes, and reducing PDF availability latency by <strong>90%</strong> (30s to &lt;3s).</li>
+        <li>Redesigned the document section architecture using an <strong>N-ary tree</strong> data structure and <strong>DFS-based traversal</strong>, enabling nested parent–child sections to load on demand via <span class="kw">Turbo</span> and reducing initial load time by <strong>60–70%</strong>.</li>
+        <li>Eliminated major backend defects and optimized <strong>N+1 queries</strong>, while fixing UI-level issues using <span class="kw">Stimulus JS</span> to streamline document rendering and improve responsiveness.</li>
+        <li>Enhanced software quality through root-cause-driven defect resolution and expanded automated test coverage, reducing recurring production issues and decreasing new defect reports by <strong>10 per week</strong>.</li>
+      </ul>
+      <p class="tech-stack"><strong>Tech Stack:</strong> Ruby on Rails, Stimulus JS, Hotwire, Turbo Streams, JavaScript, jQuery, PostgreSQL, Bootstrap, Redis, Elasticsearch, React</p>
+    </div>
+
+    <!-- ACNJ Technologies -->
+    <div class="job">
+      <div class="job-header">
+        <span class="company">ACNJ Technologies (Finvisage)</span>
+        <span class="location">Bengaluru, India</span>
+      </div>
+      <div class="job-title-row">
+        <span class="job-title">Software Developer — Asset Liability Management</span>
+        <span class="job-dates">Sept 2022 – Sept 2024</span>
+      </div>
+      <ul class="bullets">
+        <li>Reduced manual effort by <strong>40–50%</strong> by building a <span class="kw">Python</span> microservice for real-time Mutual Fund market tracking through web scraping and automating daily updates via cron jobs.</li>
+        <li>Implemented a <span class="kw">REST API</span> caching strategy with <span class="kw">Redis</span>, cutting page load times by an average of <strong>30%</strong>.</li>
+        <li>Engineered personalised dashboards for financial transparency and withdrawal limit management, resulting in a <strong>23%</strong> increase in efficiency and data accessibility.</li>
+        <li>Mentored 2 interns and junior developers in best coding practices and <span class="kw">Agile</span> workflows.</li>
+      </ul>
+      <p class="tech-stack"><strong>Tech Stack:</strong> Ruby on Rails, Python, JavaScript, jQuery, HTML, CSS, Bootstrap, PostgreSQL, Redis, AWS, REST APIs</p>
+    </div>
+
+    <!-- Edubrite -->
+    <div class="job">
+      <div class="job-header">
+        <span class="company">Edubrite Systems (Acquired by LinkedIn)</span>
+        <span class="location">Pune, India</span>
+      </div>
+      <div class="job-title-row">
+        <span class="job-title">Full Stack Developer — Learning Management System</span>
+        <span class="job-dates">June 2021 – Sept 2022</span>
+      </div>
+      <ul class="bullets">
+        <li>Revamped the video player platform by implementing chapter and timestamp features, leading to a <strong>20%</strong> improvement in content navigation efficiency and user interaction.</li>
+        <li>Created interactive web pages with Velocity and <span class="kw">JavaScript</span>, boosting user engagement by <strong>30%</strong> and enhancing cross-device usability.</li>
+        <li>Upgraded LMS product functionality by developing in-house features, resulting in a <strong>30%</strong> reduction in user-reported issues and a <strong>20%</strong> increase in user engagement.</li>
+        <li>Streamlined application performance via caching, lazy loading, and code splitting, reducing page load times by <strong>30%</strong> and elevating overall user experience.</li>
+      </ul>
+      <p class="tech-stack"><strong>Tech Stack:</strong> Java, Spring Boot, Velocity, JavaScript, jQuery, HTML, CSS, Bootstrap, MySQL</p>
+    </div>
+  </div>
+
+  <!-- ═══ EDUCATION ═══ -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-entry">
+      <div>
+        <div class="edu-school">National Institute of Science and Technology — Berhampur, Odisha, India</div>
+        <div class="edu-degree">Bachelor of Technology, Computer Science Engineering</div>
+      </div>
+      <div class="edu-right">
+        <div>CGPA: 9.1 / 10</div>
+        <div>June 2017 – June 2021</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
